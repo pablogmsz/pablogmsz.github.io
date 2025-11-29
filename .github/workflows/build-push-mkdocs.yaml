@@ -25,7 +25,7 @@ jobs:
       
       - name: Build MkDocs
         run: |
-          mkdocs build
+          mkdocs build -f proyecto/mkdocs.yml
       
       - name: Push the documentation in a branch
         uses: s0/git-publish-subdir-action@develop
